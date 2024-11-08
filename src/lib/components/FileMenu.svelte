@@ -34,7 +34,7 @@
     function justForNow() {
         toasts.add({
             type: 'error',
-            message: 'Nop, not yet',
+            message: 'nope, not yet !',
             duration: 3000
         });
     }

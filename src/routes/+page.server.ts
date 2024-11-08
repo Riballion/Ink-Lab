@@ -18,7 +18,7 @@ export const actions = {
         try {
             const discordForm = new FormData();
             const filename = xHandle ? `${xHandle.replace('@', '')}_drawing.png` : 'drawing.png';
-            discordForm.append('file', new Blob([imageBuffer], { type: 'image/png' }), filename);
+            discordForm.append('file', new Blob([imageBuffer], { type: 'image/webp' }), filename);
             
             const content = text ? 
                 `${xHandle ? `By ${xHandle}\n` : ''}${text}` : 
