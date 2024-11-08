@@ -17,21 +17,12 @@
 
 <style>
 
-    :global(body) {
-        height: 100%;
-        width: 100%;
-        background-image: url("../ink-bg.webp");
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-    }
-
     .webgl {
         position: fixed;
         inset: 0;
         height: 100%;
         width: 100%;
-        background-image: url("../ink-bg.webp");
+        background-image: url("./ink-bg.webp");
         background-size: cover;
         background-position: center center;
     }
