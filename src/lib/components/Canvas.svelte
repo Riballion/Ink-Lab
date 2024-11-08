@@ -41,7 +41,7 @@
     let curveStep = $state(0);
 
     const HISTORY_KEY = "canvas_history";
-    const MAX_HISTORY_STATES = 50;
+    const MAX_HISTORY_STATES = 30;
     let saveTimeout: any;
 
     interface HistoryState {
@@ -276,7 +276,7 @@
                 tempCanvas.height = img.height;
                 const tempCtx = tempCanvas.getContext("2d")!;
                 tempCtx.drawImage(img, 0, 0);
-                resolve(tempCanvas.toDataURL("image/jpeg", quality));
+                resolve(tempCanvas.toDataURL("image/webp", quality));
             };
             img.src = dataUrl;
         });

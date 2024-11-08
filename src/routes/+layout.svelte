@@ -7,6 +7,7 @@
 
     let { children }: Props = $props();
 
+    /*
     interface Window {
         UnicornStudio: {
             isInitialized: boolean;
@@ -29,10 +30,12 @@
             }
         };
         document.head.appendChild(script);
-    });
+
+        data-us-project="zQUwabOz723Cf0k9JvPa"
+    }); */
 </script>
 
-<div data-us-project="zQUwabOz723Cf0k9JvPa" class="webgl"></div>
+<div class="webgl"></div>
 
 {#if children}
     {@render children()}
