@@ -432,7 +432,7 @@
                 ctx.strokeStyle = rightMouseDown
                     ? $backgroundColor
                     : $currentColor;
-                ctx.lineWidth = 1;
+                ctx.lineWidth = 2;
                 ctx.moveTo(lastX, lastY);
                 ctx.lineTo(x, y);
                 ctx.stroke();
@@ -584,7 +584,7 @@
                 ctx.strokeStyle = rightMouseDown
                     ? $backgroundColor
                     : $currentColor;
-                ctx.lineWidth = 1;
+                ctx.lineWidth = 2;
                 ctx.moveTo(startX, startY);
 
                 if (e.shiftKey) {
